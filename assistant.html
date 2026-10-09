@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SecureDoc AI | AI Assistant</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+    <a class="brand side-brand" href="dashboard.html">
+
+        <span class="logo">S</span>
+
+        <div>
+            <b>SecureDoc <i>AI</i></b>
+            <small>Private Document Portal</small>
+        </div>
+
+    </a>
+
+
+    <small class="section-label">
+        WORKSPACE
+    </small>
+
+
+    <nav>
+
+        <a class="nav" href="dashboard.html">
+            <span>⌂</span>
+            Dashboard
+        </a>
+
+        <a class="nav" href="documents.html">
+            <span>▤</span>
+            Documents
+        </a>
+
+        <a class="nav" href="upload.html">
+            <span>↑</span>
+            Upload Document
+        </a>
+
+        <a class="nav active" href="assistant.html">
+            <span>✦</span>
+            AI Assistant
+        </a>
+
+        <a class="nav" href="profile.html">
+            <span>○</span>
+            My Profile
+        </a>
+
+    </nav>
+
+
+    <div class="side-bottom">
+
+        <div class="secure">
+
+            <i></i>
+
+            <div>
+                <b>Portal Secure</b>
+                <small>Protected environment</small>
+            </div>
+
+        </div>
+
+        <button id="logout">
+            ↪ Sign out
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main">
+
+<header class="topbar">
+
+    <div>
+
+        <span class="eyebrow">
+            SECUREDOC AI
+        </span>
+
+        <h1>
+            AI Assistant
+        </h1>
+
+        <p>
+            Ask questions about information in your authorized documents.
+        </p>
+
+    </div>
+
+
+    <div class="top-user">
+
+        <button id="bell">
+            ♢
+        </button>
+
+        <span class="avatar">
+            SA
+        </span>
+
+        <div>
+            <b>Sababa Khan</b>
+            <small>Administrator</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="assistant-layout">
+
+
+<section class="panel chat-panel">
+
+    <div class="chat-head">
+
+        <span class="ai-avatar big">
+            ✦
+        </span>
+
+        <div>
+
+            <h3>
+                SecureDoc AI Assistant
+            </h3>
+
+            <p>
+                <i></i>
+                Ready · Document-grounded answers
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div id="messages" class="messages">
+
+        <div class="msg ai">
+
+            <span>
+                ✦
+            </span>
+
+            <div>
+
+                <b>
+                    SecureDoc AI
+                </b>
+
+                <p>
+                    Hello! Ask me about your authorized company
+                    documents. The real RAG response will be connected
+                    by the AI/Python teams.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="question-chips">
+
+        <button data-q="What is the remote work policy?">
+            Remote work policy
+        </button>
+
+        <button data-q="What are the employee benefits?">
+            Employee benefits
+        </button>
+
+        <button data-q="Find the annual leave policy">
+            Annual leave
+        </button>
+
+    </div>
+
+
+    <form id="chatForm" class="chat-form">
+
+        <input
+            id="chatInput"
+            placeholder="Ask a question about your documents..."
+        >
+
+        <button>
+            ↑
+        </button>
+
+    </form>
+
+
+    <small class="disclaimer">
+        Frontend demo response only. Connect this form to the
+        Python/RAG API for real AI answers.
+    </small>
+
+</section>
+
+
+<aside class="panel how">
+
+    <span class="eyebrow">
+        HOW IT WORKS
+    </span>
+
+    <h3>
+        RAG-ready interface
+    </h3>
+
+
+    <div>
+
+        <b>01</b>
+
+        <span>
+
+            <strong>
+                Ask
+            </strong>
+
+            <small>
+                User asks a natural-language question.
+            </small>
+
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <b>02</b>
+
+        <span>
+
+            <strong>
+                Retrieve
+            </strong>
+
+            <small>
+                Backend searches authorized documents.
+            </small>
+
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <b>03</b>
+
+        <span>
+
+            <strong>
+                Answer
+            </strong>
+
+            <small>
+                AI returns a grounded answer and sources.
+            </small>
+
+        </span>
+
+    </div>
+
+
+    <p class="security-callout">
+
+        🛡 The backend, not frontend JavaScript,
+        must enforce permissions.
+
+    </p>
+
+</aside>
+
+</div>
+
+
+<footer>
+
+    <span>
+        © 2026 SecureDoc AI - AI-Powered Document Search Portal
+    </span>
+
+    <span>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="profile.html#privacy">
+            Privacy
+        </a>
+
+        <a href="profile.html#help">
+            Help
+        </a>
+
+    </span>
+
+</footer>
+
+
+</main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

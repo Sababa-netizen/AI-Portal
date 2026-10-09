@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SecureDoc AI | Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <a class="brand side-brand" href="dashboard.html">
+
+        <span class="logo">S</span>
+
+        <div>
+            <b>SecureDoc <i>AI</i></b>
+            <small>Private Document Portal</small>
+        </div>
+
+    </a>
+
+
+    <small class="section-label">
+        WORKSPACE
+    </small>
+
+
+    <nav>
+
+        <a class="nav active" href="dashboard.html">
+            <span>⌂</span>
+            Dashboard
+        </a>
+
+        <a class="nav" href="documents.html">
+            <span>▤</span>
+            Documents
+        </a>
+
+        <a class="nav" href="upload.html">
+            <span>↑</span>
+            Upload Document
+        </a>
+
+        <a class="nav" href="assistant.html">
+            <span>✦</span>
+            AI Assistant
+        </a>
+
+        <a class="nav" href="profile.html">
+            <span>○</span>
+            My Profile
+        </a>
+
+    </nav>
+
+
+    <div class="side-bottom">
+
+        <div class="secure">
+
+            <i></i>
+
+            <div>
+
+                <b>Portal Secure</b>
+
+                <small>
+                    Protected environment
+                </small>
+
+            </div>
+
+        </div>
+
+        <button id="logout">
+            ↪ Sign out
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="topbar">
+
+    <div>
+
+        <span class="eyebrow">
+            SECUREDOC AI
+        </span>
+
+        <h1>Dashboard</h1>
+
+        <p>
+            Our secure document workspace at a glance.
+        </p>
+
+    </div>
+
+
+    <div class="top-user">
+
+        <button id="bell">
+            ♢
+        </button>
+
+        <span class="avatar">
+            SA
+        </span>
+
+        <div>
+
+            <b>Sababa Khan</b>
+
+            <small>
+                Admininstrator
+            </small>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="welcome">
+
+    <div>
+
+        <span class="eyebrow light">
+            PRIVATE WORKSPACE
+        </span>
+
+        <h2>
+            Good morning, Admin.
+        </h2>
+
+        <p>
+            Search authorized documents or ask the AI assistant
+            a question.
+        </p>
+
+    </div>
+
+    <a
+        href="assistant.html"
+        class="btn white"
+    >
+        ✦ Ask AI Assistant
+    </a>
+
+</section>
+
+
+<section class="stats">
+
+    <div class="stat">
+
+        <span class="stat-icon blue">
+            ▤
+        </span>
+
+        <div>
+
+            <small>
+                Authorized documents
+            </small>
+
+            <strong>
+                1,248
+            </strong>
+
+            <em>
+                Updated this month
+            </em>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat">
+
+        <span class="stat-icon purple">
+            ✦
+        </span>
+
+        <div>
+
+            <small>
+                AI searches
+            </small>
+
+            <strong>
+                384
+            </strong>
+
+            <em>
+                Natural language queries
+            </em>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat">
+
+        <span class="stat-icon green">
+            ✓
+        </span>
+
+        <div>
+
+            <small>
+                Access status
+            </small>
+
+            <strong>
+                Approved
+            </strong>
+
+            <em>
+                Your account is active
+            </em>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="panel ai-search">
+
+    <div class="title-row">
+
+        <span class="sparkle">
+            ✦
+        </span>
+
+        <div>
+
+            <span class="eyebrow">
+                AI DOCUMENT SEARCH
+            </span>
+
+            <h3>
+                What do you want to find?
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        Search across documents you are authorized to access.
+    </p>
+
+
+    <div class="search-box">
+
+        <span>⌕</span>
+
+        <input
+            id="quickSearch"
+            placeholder="e.g. What is the company's remote work policy?"
+        >
+
+        <button
+            id="quickSearchBtn"
+            class="btn primary"
+        >
+            Search →
+        </button>
+
+    </div>
+
+
+    <div class="chips">
+
+        <span>Try:</span>
+
+        <button data-query="Remote work policy">
+            Remote work policy
+        </button>
+
+        <button data-query="Annual leave policy">
+            Annual leave policy
+        </button>
+
+        <button data-query="Employee benefits">
+            Employee benefits
+        </button>
+
+    </div>
+
+</section>
+
+
+<div class="grid-2">
+
+<section class="panel">
+
+    <div class="panel-head">
+
+        <div>
+
+            <h3>
+                Recent documents
+            </h3>
+
+            <p>
+                Latest files available to your account
+            </p>
+
+        </div>
+
+        <a href="documents.html">
+            View all →
+        </a>
+
+    </div>
+
+    <div id="recentDocs"></div>
+
+</section>
+
+
+<section class="panel">
+
+    <div class="panel-head">
+
+        <div>
+
+            <h3>
+                AI Assistant
+            </h3>
+
+            <p>
+                Ask questions about your documents
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="assistant-card">
+
+        <span class="ai-avatar">
+            ✦
+        </span>
+
+        <div>
+
+            <b>
+                Ready to help
+            </b>
+
+            <p>
+                Ask about policies, reports and procedures.
+            </p>
+
+            <a href="assistant.html">
+                Open AI Assistant →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="safe-note">
+
+        🛡
+
+        <div>
+
+            <b>
+                Private & authorized
+            </b>
+
+            <small>
+                Access permissions must be enforced by the backend.
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+    <span>
+        © 2026 SecureDoc AI - AI-Powered Document Search Portal
+    </span>
+
+    <span>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="profile.html#privacy">
+            Privacy
+        </a>
+
+        <a href="profile.html#help">
+            Help
+        </a>
+
+    </span>
+
+</footer>
+
+
+</main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
