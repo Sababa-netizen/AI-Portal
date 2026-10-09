@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SecureDoc AI | Profile</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+    <a class="brand side-brand" href="dashboard.html">
+
+        <span class="logo">S</span>
+
+        <div>
+            <b>SecureDoc <i>AI</i></b>
+            <small>Private Document Portal</small>
+        </div>
+
+    </a>
+
+
+    <small class="section-label">
+        WORKSPACE
+    </small>
+
+
+    <nav>
+
+        <a class="nav" href="dashboard.html">
+            <span>⌂</span>
+            Dashboard
+        </a>
+
+        <a class="nav" href="documents.html">
+            <span>▤</span>
+            Documents
+        </a>
+
+        <a class="nav" href="upload.html">
+            <span>↑</span>
+            Upload Document
+        </a>
+
+        <a class="nav" href="assistant.html">
+            <span>✦</span>
+            AI Assistant
+        </a>
+
+        <a class="nav active" href="profile.html">
+            <span>○</span>
+            My Profile
+        </a>
+
+    </nav>
+
+
+    <div class="side-bottom">
+
+        <div class="secure">
+
+            <i></i>
+
+            <div>
+
+                <b>Portal Secure</b>
+
+                <small>
+                    Protected environment
+                </small>
+
+            </div>
+
+        </div>
+
+        <button id="logout">
+            ↪ Sign out
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main">
+
+<header class="topbar">
+
+    <div>
+
+        <span class="eyebrow">
+            SECUREDOC AI
+        </span>
+
+        <h1>
+            My Profile
+        </h1>
+
+        <p>
+            Manage your profile and access information.
+        </p>
+
+    </div>
+
+
+    <div class="top-user">
+
+        <button id="bell">
+            ♢
+        </button>
+
+        <span class="avatar">
+            A
+        </span>
+
+        <div>
+            <b>Admin User</b>
+            <small>Authorized member</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="grid-2">
+
+
+<section class="panel">
+
+    <span class="eyebrow">
+        ACCOUNT
+    </span>
+
+    <h3 class="side-title">
+        Profile information
+    </h3>
+
+
+    <div class="profile-avatar">
+        A
+    </div>
+
+
+    <form id="profileForm" class="form-grid">
+
+        <label>
+
+            Full name
+
+            <input value="Admin User">
+
+        </label>
+
+
+        <label>
+
+            Organization email
+
+            <input value="admin@company.com">
+
+        </label>
+
+
+        <label>
+
+            Department
+
+            <input value="Administration">
+
+        </label>
+
+
+        <label>
+
+            Role
+
+            <input
+                value="Administrator"
+                disabled
+            >
+
+        </label>
+
+
+        <button class="btn primary">
+            Save profile
+        </button>
+
+    </form>
+
+</section>
+
+
+<section class="panel">
+
+    <span class="eyebrow">
+        ACCESS
+    </span>
+
+    <h3 class="side-title">
+        Account status
+    </h3>
+
+
+    <div class="approved">
+
+        ✓
+
+        <div>
+
+            <b>
+                Approved access
+            </b>
+
+            <small>
+                Your account is authorized to use SecureDoc AI.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span>
+            Access level
+        </span>
+
+        <b>
+            Administrator
+        </b>
+
+    </div>
+
+
+    <div class="info">
+
+        <span>
+            Session security
+        </span>
+
+        <b class="green">
+            Protected
+        </b>
+
+    </div>
+
+
+    <div id="privacy" class="profile-section">
+
+        <h3>
+            Privacy
+        </h3>
+
+        <p>
+            Only information authorized for your account should
+            be returned by the backend AI system.
+        </p>
+
+    </div>
+
+
+    <div id="help" class="profile-section">
+
+        <h3>
+            Help
+        </h3>
+
+        <p>
+            Contact your organization administrator for access
+            or document issues.
+        </p>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+    <span>
+        © 2026 SecureDoc AI
+    </span>
+
+    <span>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="#privacy">
+            Privacy
+        </a>
+
+        <a href="#help">
+            Help
+        </a>
+
+    </span>
+
+</footer>
+
+
+</main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
