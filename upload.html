@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SecureDoc AI | Upload</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+    <a class="brand side-brand" href="dashboard.html">
+
+        <span class="logo">S</span>
+
+        <div>
+            <b>SecureDoc <i>AI</i></b>
+            <small>Private Document Portal</small>
+        </div>
+
+    </a>
+
+
+    <small class="section-label">
+        WORKSPACE
+    </small>
+
+
+    <nav>
+
+        <a class="nav" href="dashboard.html">
+            <span>⌂</span>
+            Dashboard
+        </a>
+
+        <a class="nav" href="documents.html">
+            <span>▤</span>
+            Documents
+        </a>
+
+        <a class="nav active" href="upload.html">
+            <span>↑</span>
+            Upload Document
+        </a>
+
+        <a class="nav" href="assistant.html">
+            <span>✦</span>
+            AI Assistant
+        </a>
+
+        <a class="nav" href="profile.html">
+            <span>○</span>
+            My Profile
+        </a>
+
+    </nav>
+
+
+    <div class="side-bottom">
+
+        <div class="secure">
+
+            <i></i>
+
+            <div>
+                <b>Portal Secure</b>
+                <small>Protected environment</small>
+            </div>
+
+        </div>
+
+        <button id="logout">
+            ↪ Sign out
+        </button>
+
+    </div>
+
+</aside>
+
+
+<main class="main">
+
+<header class="topbar">
+
+    <div>
+
+        <span class="eyebrow">
+            SECUREDOC AI
+        </span>
+
+        <h1>
+            Upload Document
+        </h1>
+
+        <p>
+            Add a document to the secure portal.
+        </p>
+
+    </div>
+
+
+    <div class="top-user">
+
+        <button id="bell">
+            ♢
+        </button>
+
+        <span class="avatar">
+            A
+        </span>
+
+        <div>
+            <b>Admin User</b>
+            <small>Authorized member</small>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="grid-2 upload-layout">
+
+<section class="panel">
+
+    <div class="panel-head">
+
+        <div>
+
+            <h3>
+                Upload a document
+            </h3>
+
+            <p>
+                Select a file for secure backend processing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div id="dropZone" class="drop-zone">
+
+        <div class="upload-icon">
+            ↑
+        </div>
+
+        <h3>
+            Drag & drop your file here
+        </h3>
+
+        <p>
+            or choose a file from your computer
+        </p>
+
+
+        <button
+            id="choose"
+            class="btn secondary"
+        >
+            Choose file
+        </button>
+
+
+        <input
+            id="file"
+            type="file"
+            hidden
+            accept=".pdf,.doc,.docx,.xls,.xlsx,.txt"
+        >
+
+
+        <div id="selected"></div>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <label>
+
+            Document name
+
+            <input
+                id="fileName"
+                placeholder="Employee Handbook 2026"
+            >
+
+        </label>
+
+
+        <label>
+
+            Department
+
+            <select>
+
+                <option>
+                    Human Resources
+                </option>
+
+                <option>
+                    Finance
+                </option>
+
+                <option>
+                    Information Technology
+                </option>
+
+                <option>
+                    Management
+                </option>
+
+            </select>
+
+        </label>
+
+
+        <label>
+
+            Access level
+
+            <select>
+
+                <option>
+                    Authorized employees
+                </option>
+
+                <option>
+                    Department only
+                </option>
+
+                <option>
+                    Restricted
+                </option>
+
+            </select>
+
+        </label>
+
+    </div>
+
+
+    <br>
+
+
+    <button
+        id="uploadBtn"
+        class="btn primary"
+    >
+        Prepare secure upload →
+    </button>
+
+
+    <div id="uploadMsg" class="message"></div>
+
+</section>
+
+
+<section class="panel">
+
+    <span class="eyebrow">
+        WEB DEVELOPMENT RESPONSIBILITY
+    </span>
+
+    <h3 class="side-title">
+        What this frontend does
+    </h3>
+
+
+    <div class="checklist">
+
+        <div>
+
+            ✓
+
+            <span>
+
+                <b>
+                    File selection
+                </b>
+
+                <small>
+                    Provides a professional upload interface.
+                </small>
+
+            </span>
+
+        </div>
+
+
+        <div>
+
+            ✓
+
+            <span>
+
+                <b>
+                    Metadata fields
+                </b>
+
+                <small>
+                    Collects name, department and access.
+                </small>
+
+            </span>
+
+        </div>
+
+
+        <div>
+
+            ✓
+
+            <span>
+
+                <b>
+                    Backend-ready
+                </b>
+
+                <small>
+                    Python team can connect this form to an API.
+                </small>
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="warning">
+
+        <b>
+            Do not implement fake security in JavaScript.
+        </b>
+
+        <p>
+            Real encryption, malware scanning, storage and
+            authorization belong to backend/security.
+        </p>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+    <span>
+        © 2026 SecureDoc AI
+    </span>
+
+    <span>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="profile.html#privacy">
+            Privacy
+        </a>
+
+        <a href="profile.html#help">
+            Help
+        </a>
+
+    </span>
+
+</footer>
+
+
+</main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
